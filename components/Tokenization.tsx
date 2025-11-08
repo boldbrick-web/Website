@@ -31,7 +31,7 @@ const Tokenization: React.FC = () => {
           </div>
           <div>
             <video 
-              src="/Assets/real estate tokenization.mp4" 
+              src="https://raw.githubusercontent.com/boldbrick-web/assets/main/real%20estate%20tokenization.mp4" 
               autoPlay 
               loop 
               muted 
@@ -45,7 +45,7 @@ const Tokenization: React.FC = () => {
 
         {/* About Tokenization Video Section */}
         <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
-          <VideoPlayer src="/Assets/About Tockenisazation.mp4" />
+          <VideoPlayer src="https://raw.githubusercontent.com/boldbrick-web/assets/main/About%20Tockenisazation.mp4" />
           <div>
             <h4 className="font-oswald text-2xl font-bold text-zinc-800 mb-6">About Tokenization</h4>
             <p className="text-zinc-600 mb-4">
