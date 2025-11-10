@@ -3,7 +3,7 @@ import { GridIcon, ChevronsUpDownIcon } from './Icons';
 
 const Header: React.FC = () => {
   return (
-    <header className="fixed top-0 left-0 h-full w-32 z-30 flex flex-col items-center justify-between p-2 bg-white shadow-lg hidden md:flex">
+    <header className="fixed top-0 left-0 h-full w-32 z-30 flex flex-col items-center justify-between p-2 bg-white dark:bg-zinc-900 shadow-lg hidden md:flex transition-colors duration-300">
       <div className="flex flex-col items-center">
         <button 
           className="p-2 bg-transparent border-0 cursor-pointer mb-4 hover:scale-110 hover:rotate-180 transition-all duration-300"
@@ -12,7 +12,7 @@ const Header: React.FC = () => {
           }}
           aria-label="Go to top"
         >
-          <GridIcon className="w-6 h-6 text-zinc-800" />
+          <GridIcon className="w-6 h-6 text-zinc-800 dark:text-zinc-200" />
         </button>
         
         <div className="flex items-center justify-center w-full mt-12 mb-6">
@@ -38,7 +38,7 @@ const Header: React.FC = () => {
           href="https://www.instagram.com/vijeesh6246?igsh=ZGk3bDZiZzJlN3ox" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="font-oswald text-sm tracking-widest text-zinc-500 hover:text-zinc-900 transition-colors duration-300 vertical-text no-hover-effect"
+          className="font-oswald text-sm tracking-widest text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-[#B9A470] transition-colors duration-300 vertical-text no-hover-effect"
         >
           INSTAGRAM
         </a>
@@ -46,7 +46,7 @@ const Header: React.FC = () => {
           href="https://facebook.com/boldbrick" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="font-oswald text-sm tracking-widest text-zinc-500 hover:text-zinc-900 transition-colors duration-300 vertical-text no-hover-effect"
+          className="font-oswald text-sm tracking-widest text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-[#B9A470] transition-colors duration-300 vertical-text no-hover-effect"
         >
           FACEBOOK
         </a>
@@ -54,7 +54,7 @@ const Header: React.FC = () => {
           href="https://wa.me/919400925507" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="font-oswald text-sm tracking-widest text-zinc-500 hover:text-zinc-900 transition-colors duration-300 vertical-text no-hover-effect"
+          className="font-oswald text-sm tracking-widest text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-[#B9A470] transition-colors duration-300 vertical-text no-hover-effect"
         >
           WHATSAPP
         </a>
@@ -67,7 +67,7 @@ const Header: React.FC = () => {
         }}
         aria-label="Scroll to bottom"
       >
-        <ChevronsUpDownIcon className="w-6 h-6 text-zinc-800" />
+        <ChevronsUpDownIcon className="w-6 h-6 text-zinc-800 dark:text-zinc-200" />
       </button>
     </header>
   );

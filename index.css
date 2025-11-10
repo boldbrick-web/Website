@@ -18,6 +18,7 @@ body {
   overflow-x: hidden;
   width: 100%;
   position: relative;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #root {
@@ -206,6 +207,10 @@ ing animations */
   background: #f1f1f1;
 }
 
+.dark ::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
 ::-webkit-scrollbar-thumb {
   background: #B9A470;
   border-radius: 4px;
@@ -213,4 +218,122 @@ ing animations */
 
 ::-webkit-scrollbar-thumb:hover {
   background: #a08f5f;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #d4c18a;
+}
+
+
+/* Dark Mode Global Styles */
+.dark {
+  color-scheme: dark;
+}
+
+/* Text colors in dark mode - ensure readability */
+.dark .text-zinc-800 {
+  color: #f4f4f5 !important;
+}
+
+.dark .text-zinc-700 {
+  color: #e4e4e7 !important;
+}
+
+.dark .text-zinc-600 {
+  color: #d4d4d8 !important;
+}
+
+.dark .text-zinc-500 {
+  color: #a1a1aa !important;
+}
+
+.dark .text-zinc-400 {
+  color: #a1a1aa !important;
+}
+
+.dark .text-zinc-300 {
+  color: #d4d4d8 !important;
+}
+
+.dark .text-zinc-100 {
+  color: #f4f4f5 !important;
+}
+
+.dark .text-white {
+  color: #ffffff !important;
+}
+
+/* Keep brand colors consistent */
+.dark .text-\[#B9A470\] {
+  color: #B9A470 !important;
+}
+
+.dark .text-red-600 {
+  color: #ef4444 !important;
+}
+
+.dark .text-red-400 {
+  color: #f87171 !important;
+}
+
+/* Dark mode backgrounds */
+.dark .bg-white {
+  background-color: #18181b !important;
+}
+
+.dark .bg-\[#F0F0F0\] {
+  background-color: #0D1A26 !important;
+}
+
+.dark .bg-\[#0D1A26\] {
+  background-color: #0D1A26 !important;
+}
+
+.dark .bg-zinc-900 {
+  background-color: #18181b !important;
+}
+
+.dark .bg-gray-200 {
+  background-color: #27272a !important;
+}
+
+/* Form elements in dark mode */
+.dark input,
+.dark textarea {
+  background-color: #27272a;
+  color: #e4e4e7;
+  border-color: #3f3f46;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #71717a;
+}
+
+/* Borders in dark mode */
+.dark .border-zinc-200,
+.dark .border-zinc-300 {
+  border-color: #3f3f46 !important;
+}
+
+.dark .divide-gray-200 > * {
+  border-color: #3f3f46 !important;
+}
+
+/* Shadows in dark mode */
+.dark .shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+}
+
+.dark .shadow {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Images in dark mode - maintain visibility */
+.dark img {
+  opacity: 0.95;
+}
+
+.dark video {
+  opacity: 0.9;
 }

@@ -1,11 +1,10 @@
 import React from 'react';
 import SectionTitle from './SectionTitle';
-import VideoPlayer from './VideoPlayer';
 import { ShieldCheckIcon, LayersIcon, GlobeIcon, TrendingUpIcon } from './Icons';
 
 const Tokenization: React.FC = () => {
   return (
-    <section id="tokenization" className="py-20 px-4 bg-white">
+    <section id="tokenization" className="py-20 px-4 bg-white dark:bg-zinc-900">
       <div className="container mx-auto">
         <SectionTitle backgroundText="INNOVATION" foregroundText="REAL ESTATE TOKENIZATION" />
         <div className="text-center max-w-4xl mx-auto mb-16">
@@ -45,7 +44,16 @@ const Tokenization: React.FC = () => {
 
         {/* About Tokenization Video Section */}
         <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
-          <VideoPlayer src="https://raw.githubusercontent.com/boldbrick-web/assets/main/About%20Tockenisazation.mp4" />
+          <div>
+            <video 
+              src="https://raw.githubusercontent.com/boldbrick-web/assets/main/About%20Tockenisazation.mp4" 
+              controls
+              playsInline
+              className="w-full h-auto object-cover rounded"
+            >
+              Your browser does not support the video tag.
+            </video>
+          </div>
           <div>
             <h4 className="font-oswald text-2xl font-bold text-zinc-800 mb-6">About Tokenization</h4>
             <p className="text-zinc-600 mb-4">
