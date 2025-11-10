@@ -41,6 +41,13 @@ const Footer: React.FC = () => {
               <span>Innovating Real Estate Investment</span>
             </div>
           </div>
+          
+          {/* Designer Watermark */}
+          <div className="text-center mt-8 pt-6 border-t border-zinc-200 dark:border-zinc-700">
+            <p className="text-xs text-zinc-400 dark:text-zinc-500">
+              Designed by <span className="font-semibold">Polaroid Dosa</span>
+            </p>
+          </div>
         </div>
       </footer>
 
